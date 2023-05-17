@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $code = rand(10000, 99999);
     $user->setCode($code);
 
-    $data = 'fk2qglmR1iyNxSuwLPs83HVzOs8D7z4I7OhyZbdujyU=';
+    $data = 'fk2qglmR1iyNxSuwLPs83HVzOs8D7z4I7OhyZbdujyU=' . $_POST['email'];
     $user->setQr_code($data);
 
     $file = "images_2/qr1.png";
