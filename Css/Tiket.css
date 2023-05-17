@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Imperial Script', cursive;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+:root {
+    --first_color: #FFA646;
+    --second_color: #EF6C08;
+    --third_color: #000000;
+    --four_color: #757575;
+    --five_color: #FFFFFF;
+}
+
+.left-side {
+    width: 180px;
+    height: 652px;
+    margin-top: 12px;
+    background-image: linear-gradient(to top, var(--second_color), var(--first_color));
+    position: fixed;
+    left: -100%;
+    padding-top: 200px;
+    transition: all 0.7ms ease;
+    z-index: 1;
+}
+
+#cancel {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: -70px;
+    font-size: 20px;
+    color: var(--five_color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.left-side a {
+    width: 140px;
+    display: block;
+    text-decoration: none;
+    color: var(--five_color);
+    border-bottom: 1px solid var(--five_color);
+    padding: 15px 0;
+    margin: 0 15px;
+}
+
+.left-side a i {
+    width: 180px;
+}
+
+.Tiket-data {
+    background-color: var(--third_color);
+}
+
+.Tiket-data h2 {
+    color: var(--first_color);
+}
+
+@media(max-width:450px) {
+    .Tiket-data h2 {
+        font-size: 20px;
+    }
+}
+
+.data-tiket p:first-child {
+    padding-bottom: 20px;
+    color: var(--five_color);
+    border-bottom: 2px solid var(--second_color);
+    color: var(--first_color);
+}
+
+.name-party {
+    border-bottom: 2px solid var(--second_color);
+}
+
+.time p {
+    color: var(--first_color);
+}
+
+.time {
+    border-bottom: 2px solid var(--second_color);
+}
+
+.imgMask {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    background-color: var(--five_color);
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    color: var(--five_color);
+    background-image: linear-gradient(var(--second_color), var(--first_color));
+}
+
+@media(max-width:450px) {
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .imgMask {
+        height: 250px;
+    }
+}
+
+.icon {
+    color: var(--second_color);
+}
+
+.box-submit,.student-data {
+    border: 2px solid var(--five_color);
+}
+
+@media(max-width:450px) {
+    .box-submit {
+        margin: 0 14px 0;
+        border: none;
+        padding: 0;
+    }
+    .date, .partyname {
+        width: 100%;
+        /* font-size: 10px; */
+        border-bottom: 2px solid var(--second_color);
+    }
+}
+.content-card{
+    border: 2px solid var(--five_color);
+}
+
+span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px 0;
+    background-color: var(--second_color);
+}
+.borderbottom{
+    border-bottom: 2px solid var(--second_color);
+}
+.form-select {
+    background: #222;
+    color: var(--five_color);
+}
+
+option {
+    background-color: transparent;
+}
+
+.btn-back {
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    border-color: var(--five_color);
+}
+@media(max-width:450px) {
+    .btn-back {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .content-card{
+        border: none;
+    }
+    .content-card h3{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    span{
+        width: 10px;
+        height: 10px;
+    }
+}
+.student-data{
+    padding: 40px;
+}
+@media(max-width:768px){
+    .student-data{
+        padding: 10px;
+    }
+}
+@media(max-width:450px){
+    .student-data{
+        border: none;
+        padding: 10px;
+    }
+}
+.inputs input{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    color: var(--five_color);
+    border: 1px solid var(--five_color);
+    border-radius: 4px;
+}
+.inputs input:focus{
+    outline: none;
+}
+.inputs input::placeholder{
+    color: var(--five_color);
+}
+.vertical-line{
+    width: 3px;
+    height: 500px;
+    margin: 0 10px;
+    background-color: #EF6C08;
+}
+.btn a{
+width: 100% !important;
+}
+footer {
+    width: 100%;
+    height: 60px;
+    color: var(--five_color);
+    background-image: linear-gradient(to right, var(--second_color), var(--first_color));
+    position: relative;
+    z-index: 1;
+}
+
+.footer-link ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: var(--five_color);
+}
+
+.links-contact {
+    width: 100%;
+    margin-top: 14px;
+}
+
+.links-contact a svg {
+    font-size: 20px;
+    padding: 5px 6px;
+    margin: 0 2px;
+    color: var(--five_color);
+    border: 1px solid var(--five_color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media(max-width:450px) {
+    footer {
+        height: 120px;
+    }
+
+    .links-contact a svg {
+        font-size: 15px;
+    }
+
+    .links-contact {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
